@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-96x96.png">
+    <!-- Css link -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Kochwelt</title>
+</head>
+<body onload="generateHeaderFooter()" >
+     <!-- Header -->
+     <header class="header"></header>
+     <!-- Detail section -->
+    <section class="details-section">
+        <div class="container">
+            <div class="headline">
+                <h1>American Pancakes</h1>
+            </div>
+            <div class="food-pic">
+                <img id="pancake-img" src="./images/pancakes.jpg">
+            </div>
+            <div class="info">
+                <div class="icon-text-container">   
+                    <img class="info-icon" src="./images/icons/clock-regular.svg">
+                    <p>15 Min</p>
+                </div>
+                <div class="icon-text-container">   
+                    <img class="info-icon" src="./images/icons/brain-solid.svg">
+                    <p>simpel</p>
+                </div>
+                <div class="icon-text-container">   
+                    <img class="info-icon" src="./images/icons/calendar-alt-regular.svg">
+                    <p>20.12.22</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ingredient section -->
+    <section class="ingredient-section">
+        <div class="container">
+            <hr>
+            <div class="portion">
+                <p>Zutaten für</p>
+                <input class="portion-input" type="text" placeholder="How many persons?">
+                <button class="portion-btn" onclick="calculatePancake()" type="button">Portionen</button>
+            </div>
+            <div class="ingredient-list">
+                <table>
+                    <tr>
+                        <td><span class="ing1_quantity">500</span>g Mehl</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-white"><span class="ing2_quantity">400</span>ml Milch</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ing3_quantity">2</span> Esslöffel Erdnussbutter</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-white"><span class="ing4_quantity">1</span> Prise Zucker</td>
+                    </tr>
+                    <tr>
+                        <td><span class="ing5_quantity">3</span> Eier</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-white"><span class="ing7_quantity">1</span> Reife Banane</td>
+                    </tr>
+                    <tr>
+                        <td>Kokosnussflocken</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-white"><span class="ing6_quantity">10</span>g Gemahlene Mandeln</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- preparation section -->
+    <section class="preparation-section">
+        <div class="container">
+            <div>
+                <h2 class="preperation-headline">Zubereitung</h2>
+            </div>
+            <div class="preparation-details">
+                <div class="icon-text-container">
+                    <img class="info-icon" src="./images/icons/clock-regular.svg">
+                    <p>ca. 15 Minuten</p>
+                </div>
+                <div class="icon-text-container">
+                    <img class="info-icon" src="./images/icons/clock-regular.svg">
+                    <p>Gesamtzeit ca. 20 Minuten</p>
+                </div>
+            </div>
+            <div class="preparation-text">
+                Erst die trockenen Zutaten mischen. Dann die nassen Zutaten verrühren und darüber gießen. Schnell verrühren, bis keine großen Klumpen mehr da sind. In einer Pfanne etwas Öl erhitzen und pro Cake 2 Löffel Teig nehmen. Bei E-Herd auf Stufe 2 braten. Wenn die Blasen platzen, nachsehen, ob die Unterseite braun ist. Dann wenden.
+                Wenn die Pancakes fertig sind, macht sich jeder einen kleinen Turm, immer erst Pancake, dann Sirup usw., bis man so 3 - 4 Pancakes gestapelt hat.
+            </div>
+        </div>
+    </section>
+    <!-- Creator section -->
+    <section class="creator-section">
+        <div class="container">
+            <div class="creator-headliner">
+                <h2>Rezept erstellt von</h2>
+            </div>
+            <div class="creator-pic-name">
+                <img class="creator-pic" src="./images/profile.png">
+                <h3>Abass</h3>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+     <footer class="footer"></footer>
+    <!--JavaScript link-->
+    <script src="./script.js"></script>
+</body>
+</html>

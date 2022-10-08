@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-96x96.png">
+    <title>Kontaktformular</title>
+</head>
+<body onload="generateHeaderFooter()">
+
+    <header class="header"></header>
+   <div class="container contactSection">
+    <h2 class="contact-title">Kontaktformular</h2>
+    <div class="contactPadding">
+    <form action="https://gruppe-324.developerakademie.net/Kochwelt/contact/send_mail.php" method="post">
+    <span class="inputCenter"><span>Vorname<span title="Pflichtangaben" class="star">*</span><input required type="text" name="name"class="inputSize"></span></span>
+    <span class="inputCenter"><span>Nachname<span title="Pflichtangaben" class="star">*</span><input required type="text"class="inputSize"></span></span>
+    <span class="inputCenter"><span>E-Mail<span title="Pflichtangaben" class="star">*</span><input required type="email" class="inputSize"></span></span>
+    <span class="inputCenter"><span>Telefon<input type="tel" class="inputSize"></span></span>
+    <span class="inputCenter"><span>Betreff<span title="Pflichtangaben" class="star">*</span><input required type="text" placeholder="Rezeptvorschlag ..."  class="inputSize" ></span></span>
+    <span class="inputCenter"><span>Nachricht<span title="Pflichtangaben" class="star">*</span>
+
+<div class="second-input">   
+    <textarea class="textSize" required type="text" name="message" maxlength="512" placeholder="Senden Sie uns Ihre Nachricht ..."></textarea>
+    <div class="underArea"><span class="subtext">max. 512 char.<br><br>Pflichtangaben<span class="star">*</span></span>
+    <div class="subtext"><span><input type="checkbox" required=""></span> 
+    <span class="datenschutz"><span class="star">*</span>
+    Sie erklären sich damit einverstanden,dass Ihre Daten zur Bearbeitung
+    <br> Ihres Anlieges verwendet werden. Weitere Informationen und
+    <br>Widerrushinweise finden Sie in der <a id="data" href="Datenschutz.html">Datenschutzerklärung.</a>
+    </span></div> 
+<div class="submit-btn">   
+    <button class="apply-btn" type="submit" >Absenden</button>
+</div>
+    </div>
+
+</div>
+
+
+    </span>
+    </span>
+    </form>
+    </div>
+    </div>
+</div>
+
+
+     <!-- Footer -->
+     <footer class="footer"></footer>
+    <!-- JavaScript link-->
+    <script src="./script.js"></script>
+</body>
+</html>

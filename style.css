@@ -1,0 +1,948 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Styling for Header (Logo-navigation bar */
+/* Header */
+.header {
+    box-shadow: 0 8px 6px -8px rgb(175, 173, 173);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-links {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+}
+
+.nav-links li {
+    list-style-type: none;
+    padding: 1rem;
+    position: relative;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a::after {
+    content: "";
+    width: 0%;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    border-radius: 0.3rem;
+    background: rgb(146, 144, 144);
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Css logo animation */
+#logo {
+    animation: fadeInOut;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+}
+
+@keyframes fadeInOut {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+}
+
+/* Css logo animation */
+
+.toggle-button {
+    width: 30px;
+    height: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 0.6rem;
+}
+/* Header */
+
+/* Raphael */
+.part1 .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.part1-img {
+    height: 18rem;
+    width: 30rem;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.column-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-container h2 {
+    margin-bottom: 1.6rem;
+}
+
+.column-container a {
+    margin-top: 5.8rem;
+    text-align: center;
+}
+
+.apply-btn {
+    background-color: rgb(1, 71, 20);
+    padding: 12px;
+    width: 16rem;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in-out;
+}
+.apply-btn:hover {
+    background-color: rgb(241, 146, 44);
+}
+
+/* Datenschutz */
+    .datenschutz-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+       
+    }
+
+    #headline {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        color: #728a91;
+    }
+
+/* Datenschutz */
+
+/* Impressum */
+/* Datenschutz */
+    .impressum {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+/* Impressum */
+
+/* Raphael */
+
+/* Abass */
+/* Das hier ist Abass Part 1*/
+.text{
+    font-size: 16px;
+}
+
+.image-text {
+    font-weight: bold;
+    margin-top: 0.4rem;
+}
+
+.sectionRecipe {
+    background-color: #EFEFEF;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.sectionRecipe img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.recipeImg {
+    justify-content: space-between;
+    display: flex;
+}
+.text-center {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+.subtitle {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* Das hier ist Abass Part 2*/
+.titlePan{
+    padding-bottom: 60px;
+}
+.sectionPan {
+    background-color: #FFFFFF;
+    padding-bottom: 100px;
+}
+.sectionPan img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.leftText{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.img-link {
+    transition: transform 0.4s ease-in-out;
+}
+
+.img-link:hover {
+    transform: scale(1.08);
+}
+
+/* Abass */
+
+
+/* Footer */
+.footer {
+    background: #ededed;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.social-links, .right-links {
+    display: flex;
+}
+
+.social-links li, .right-links li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.social-links li a i, .right-links li a {
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links li a i:hover, .right-links li a:hover {
+    color: rgb(163, 162, 159);
+}
+
+
+.social-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.4rem;
+}
+
+
+.right-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+/* Footer */
+
+/* Recipe */
+/* Detail section */
+.details-section {
+    margin-top: 4rem;
+}
+.details-section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-section .container .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    background: rgb(223, 219, 219);
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+}
+
+.info-icon {
+    margin-right: 0.7rem;
+}
+
+.headline {
+    margin-bottom: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.food-pic {
+    margin-bottom: 1.4rem;
+}
+
+.food-pic img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0.4rem;
+}
+
+#lasagna-img {
+    object-position: center !important;
+}
+
+#pizza-img {
+    object-position: center !important;
+}
+
+#pancake-img {
+    object-position: center !important;
+}
+
+.info-icon {
+    width: 0.9rem;
+    
+}
+
+/* Ingredient section */
+.ingredient-section .container {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    background-color: rgb(230, 223, 223);
+    margin-bottom: 0.6rem;
+}
+.portion {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portion-input {
+    width: 10rem;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    border-color: rgb(235, 229, 229);
+    
+}
+
+.portion-btn {
+    cursor: pointer;
+    width: 10rem;
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: rgb(2, 88, 2);
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+.portion-btn:hover {
+    background: rgb(5, 184, 5);
+}
+
+.portion-input {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+td {
+    border-radius: 0.8rem;
+    background: rgba(241, 237, 237, 0.9);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+/* Preparation section */
+.preperation-headline {
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.preparation-details {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.preparation-text {
+    margin-bottom: 1.4rem;
+}
+
+/* Creator section */
+.creator-section {
+    margin-bottom: 8rem;
+}
+
+.creator-pic-name {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.creator-headliner {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.creator-pic-name h3 {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.creator-pic {
+    width: 4.8rem;
+    border-radius: 50%;
+}
+/* Recipe */
+
+/* Kontaktformular */
+.inputSize{
+    width: 440px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 0.4rem;
+    justify-content: center;
+    display: flex;
+    padding-left: 7px;
+}
+.contactSection{
+    background-color: #F9FAFC; 
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.contactPadding{
+    padding-top: 50px;
+}
+
+.textSize{
+    width: 440px;
+    height: 110px;
+    margin-top: 5px;
+    border-radius: 0.4rem;
+    justify-content: center;
+    display: flex;
+    resize: none;
+    padding-left: 7px;
+}
+
+.second-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-title{ 
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: #2d3436;
+    border: solid 1px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+
+}
+
+.inputCenter{
+    justify-content: center;
+    display: flex;
+    
+}
+
+.subtext{
+    font-size: 12px;
+    padding-bottom: 25px;
+}
+
+.underArea{
+    display: flex;
+    flex-direction: column;
+}
+.star{
+    font-size: 20px;
+    color: red;
+}
+
+#data{
+    text-decoration: none;
+    color:rgb(137, 170, 146);
+    font-weight: bold;
+}
+#data:hover {
+    color: rgb(247, 169, 85);
+    cursor: pointer;
+}
+
+
+/* Kontaktformular */
+
+
+/* Media queries for index.html */
+/* Media query Hamburger menu */
+@media (max-width: 1060px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 8rem;
+    }
+
+    .header .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container.active {
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .nav-links li:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .nav-links li a:hover::after {
+        width: 0%;
+    }   
+}
+
+/* Media query 1140px */
+@media (max-width: 1140px) {
+    /* Raphael section */
+    .part1 .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column-container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .part1-img {
+        width: 600px;
+    }
+
+    /* Abass section part 1 */
+    .recipeImg {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subtitle {
+        margin-bottom: 3rem;
+    }
+
+    .sectionRecipe img {
+        width: 600px;
+    }
+
+    /* Abass section part 2 */
+    .leftText{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .leftText img {
+        margin-top: 6rem;
+        width: 600px;
+    }
+
+    /* Footer */
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Media query 660px */
+@media (max-width: 660px) {
+    /* Header logo */
+    #logo {
+        width: 18rem;
+    }
+
+    /* Raphael section */
+    .part1-img {
+        width: 400px;
+    }
+
+    /* Abass section part 1 */
+    .sectionRecipe img {
+        width: 400px;
+    }
+
+    /* Abass section part 2 */
+    .leftText img {
+        margin-top: 6rem;
+        width: 400px;
+    }
+
+    /* Footer */
+    .footer-right {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-left img {
+        width: 18rem;
+    }
+
+    .right-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Media query 460px */
+@media (max-width: 460px) {
+    /* Raphael section */
+    .part1-img {
+        width: 320px;
+    }
+
+    /* Abass section part 1 */
+    .sectionRecipe img {
+        width: 320px;
+    }
+
+    /* Abass section part 2 */
+    .leftText img {
+        margin-top: 6rem;
+        width: 320px;
+    }
+
+    /* Footer */
+    .footer-right {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Media query 300px */
+@media (max-width: 300px) {
+    /* Raphael section */
+    .part1-img {
+        width: 250px;
+    }
+
+    /* Abass section part 1 */
+    .sectionRecipe img {
+        width: 250px;
+    }
+
+    /* Abass section part 2 */
+    .leftText img {
+        margin-top: 6rem;
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer-right {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-left img {
+        width: 16rem;
+    }
+
+    /* Datenschutz */
+    .datenschutz-container {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        font-size: 0.8rem;
+    }
+
+    #headline {
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .datenschutz-container h2 {
+        font-size: 0.9rem;
+    }
+
+
+     /* Kontaktformular */
+     .inputSize {
+        width: 240px !important;
+    }
+
+    .textSize {
+        width: 240px !important;
+    }
+
+    .contactSection{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+}
+/* Media queries for index.html end */
+
+/* Media queries for recipe sites */
+/* Meida query 800px */
+@media (max-width: 800px) {
+    /* Detail section */
+    
+    .headline {
+        text-align: center;
+    }
+
+    .info {
+        width: 100%;
+        justify-content: center !important;
+        
+    }
+
+    /* Ingredient section */
+    .portion {
+        justify-content: center;
+    }
+   
+    td {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* Preparation section */
+    .preperation-headline  {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .preparation-details {
+        justify-content: center;
+    }
+
+    .preparation-text {
+        text-align: center;
+    }
+
+    /* Creator section */
+    .creator-section {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .creator-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .creator-pic-name {
+        flex-direction: column;
+    }
+
+    /* Datenschutz */
+    .datenschutz-container {
+        text-align: center;
+        padding-left: 2.2rem;
+        padding-right: 2.2rem;
+    }
+
+    .datenschutz-container h2 {
+        font-size: 0.9rem;
+    }
+
+    /* Impressum */
+    .impressum {
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Kontaktformular */
+    .contactSection{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
+
+/* Meida query 520px */
+@media (max-width: 520px) {
+    /* Detail section */
+    .info {
+        flex-direction: column;
+    }
+
+    .icon-text-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Ingredient section */
+    .portion {
+        flex-direction: column;
+    }
+
+    /* Preparation section */
+    .preparation-details {
+        flex-direction: column;
+    }
+
+    /* header */
+    .header {
+        margin-bottom: 6rem;
+    }
+
+    /* Kontaktformular */
+    .inputSize {
+        width: 300px;
+    }
+
+    .textSize {
+        width: 300px;
+    }
+
+    .contact-title { 
+        border: none;
+    }
+
+    .contactSection {
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+
+    .inputCenter {
+        text-align: center;
+    }
+  
+    .contactSection{
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .titlePan {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .contactSection {
+        margin:  4rem auto;
+    }
+}
